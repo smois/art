@@ -1,0 +1,55 @@
+   a:link {
+    color: #FFF; 
+    text-decoration:none; 	
+   }
+   a:visited {
+    color: #FFF; /* ÷вет посещенных ссылок */
+    text-decoration:none;
+   }
+   a:hover {
+    color: #FFF; /* ÷вет посещенных ссылок */
+    text-decoration:none;
+    text-shadow:-1px -1px 2px black, 0 0 1em lightcyan;
+   }
+
+.menuitem{
+	padding:10px;
+	border:1px solid #FAEBD7;
+	margin-left:5px;
+	text-shadow:1px 1px 2px black, 0 0 1em #C0C0C0;
+	font-size: 1.5em;
+}	
+
+   body {
+    background-color: #c7b39b; /*url(images/border.jpg);  цвет фона и путь к файлу */
+/*    background: #c7b39b url(images/fountain_2.jpg);  ÷вет фона и путь к файлу */
+    background-size:70%;
+    background-repeat:no-repeat;
+    background-position:40% 50%;
+    background-attachment:fixed;
+    color: #111; /* ÷вет текста */
+   }
+   header {
+	   background-color: #c7b39b; 
+	   position:fixed; 
+	   left:10px; 
+	   right:10px; 
+	   top:8px; 
+	   z-index:2; 
+	   border:1px solid #FAF0E6; 
+	   margin-bottom:20px;
+	}
+  .main{
+	overflow:visible;
+	width:100%;
+	position:absolute; 
+	top:70px;
+
+  } 		
+
+  aside {float: left; width: 18%; margin:10px;padding:10px;}	
+  aside#right {float: none; width: 18%; position:fixed; display: inline-block; vertical-align: top;}	
+  aside#left{position:fixed;}
+  p.about{padding-left:15px; text-align:justify;}
+  /*#for_desc{margin-left:auto;}*/
+  

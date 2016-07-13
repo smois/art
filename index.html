@@ -1,0 +1,60 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Искусство в марках</title>
+<meta charset= "utf-8">
+<meta name="author" lang="ru" content="Виктор Моисеенко">
+<meta name="description" content="Искусство в почтовых марках: художники, картины, музей - исторические факты и биографии.">
+<meta name="keywords" content="искусство, марки, картины, художники, музеи, живопись, биографии, история">
+<!--<base href="http://localhost:8080/art/"> -->
+<link rel= "stylesheet" href = "artlist.css">
+</head> 
+<body style="background: #c7b39b">
+
+<header style="border:1px solid #FAF0E6; margin-bottom:20px;">
+<p id="head">
+<span class="menuitem"><a class="menu" href="art.html" onclick="menu_artist();">Художники</a></span>
+<!--<span class="menuitem"><a class="menu" href="#" onclick="menu_museum();">Музеи</a></span> -->
+<span class="menuitem"><a class="menu" href="index.html" >О проекте</a></span>
+</p>
+</header>
+
+<article>
+<div style="float:right; padding:10px;"><img src="images/fountain.jpg" width="700px"></div>
+	<p class="about">В этом проекте показаны изображения лишь тех живописных произведений, которые приведены на почтовых марках, блоках и конвертах СССР и России. Соответственно, в базу данных внесены лишь художники, являющиеся авторами этих произведений. </p>
+      <p class="about">Информация о картинах систематизирована или по художникам, или по жанрам, или по музеям. Информация для художников России систематизирована по историческим периодам, а для иностранных художников - по странам.</p>
+      <p class="about">Информация содержит графический материал (изображение почтовой продукции, иллюстрации живописных произведений и портреты живописцев) и текстовый материал (описание живописных произведений и биографии их авторов).</p>
+      <p class="about">Так как изображения на филателистической продукции не всегда высокого качества, предусмотрена возможность просмотра иллюстраций оригиналов соответствующих картин. Это особенно актуально для портретов художников, изображения которых на почтовой продукции приводятся лишь для некоторых самых великих и популярных живописцев.</p>
+
+<div clear="both">
+<!--
+<audio id="get_music" src="music/Radiohead - In Rainbows/3.mp3" preload="auto" autoplay controls></audio>
+-->
+</div>
+<script>
+//Проигрываем все в папке
+//сделать нормально - в папку класть json со структурой 
+//список папок (дисков) для выбора диска.
+var aud = document.getElementById("get_music");
+aud.volume = 0.2;
+aud.onended = function() {
+var ln = aud.src.length;
+var sub = aud.src.substr(ln-5,1);
+subt = sub-0+1;
+aud.src=(sub==0)?aud.src.substr(0,ln-5)+'.mp3':aud.src.substr(0,ln-5)+subt+'.mp3';
+};
+</script>
+<?
+echo srt_replace('fsgd "jgjfkf"','"', '\"');
+
+?>
+
+</article>
+<footer style="padding-top:10px;clear:both; text-align:right; vertical-align:bottom">
+<p>&copy;<a href="mailto:mois.viktor47@yandex.ru?Subject=Искусство%20в%20марках" target="_blank">Моисеенко В.И.</a></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>
+ 

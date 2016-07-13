@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Искусство в почтовых марках</title>
+<meta charset= "utf-8">
+<meta name="author" lang="ru" content="Виктор Моисеенко">
+<meta name="description" content="Искусство в почтовых марках: художники, картины, музей - исторические факты и биографии.">
+<meta name="keywords" content="искусство, марки, картины, художники, музеи, живопись, биографии, история">
+
+<script src = "js/art.js"> </script>
+<!-- <script src = "js/jquery/jquery.js"></script> -->
+<script src = "js/jquery/jquery-2.2.3.min.js"></script>
+<script src = "js/jquery-ui.min.js"></script>
+
+<link rel= "stylesheet" href = "css/artlist.css">
+<link rel= "stylesheet" href = "css/boxes3.css">
+<link rel= "stylesheet" href = "css/jquery-ui.min.css">
+
+</head> 
+<body onload="fill_list();">
+
+<header>
+<p id="head">
+<span class="menuitem"><a class="menu" href="#" onclick="menu_artist();">Художники</a></span>
+<!--<span class="menuitem"><a class="menu" href="#" onclick="menu_museum();">Музеи</a></span> -->
+<span class="menuitem"><a class="menu" href="index.html">О проекте</a></span>
+</p>
+</header>
+<article class="main">
+<aside id="fiction"></aside>
+<aside id="left">
+
+<select accesskey="a" size="1" id="artist" name="artist">
+    <option selected disabled>Выберите художника</option>   
+</select>
+<div style="border:solid 0px;">
+<div id="pict" style="position: absolute;" onclick="change_picture();">
+<img id="stamp" src="JPG/load.png" width="230px" onerror="no_picture();" align="top" title="Щелкни, чтобы увидеть репродукцию">
+<p id="life" style="text-align:left;">Годы жизни художника</p>
+</div>
+</div>
+</aside>
+
+<div id="for_desc" class="box3">
+<!--<div id="for_desc" style="display: inline-block; text-align:justify; overflow-y: auto; width:48%; height:420px; border:none; margin:0px 10px 0px 20px; padding:0px 20px 0px 20px; ">
+-->
+
+<p id="descript" value="artist">Биография художника и описание его картин.</p>
+</div>
+<aside id="right">
+<img id="arrow" src="images/arrl.png" width="10px" onclick="enlarge();" title="Увеличить">
+<select accesskey="p" size="1" id="paint" style="margin-left:5px; width:205px;">
+<!--    <option selected disabled>Выберите картину</option>   -->
+</select>
+
+<div style="border:solid 0px;">
+<div id="pict_p" onclick="change_picture_p();">
+<img id="stamp_p" src="JPG/load.png" width="225px" onerror="no_picture_p();" style="align:top; position:relative; z-index:2;" title="Щелкни, чтобы увидеть репродукцию">
+</div>
+<p><span id="buttonResize" style="text-align:left;">&nbsp;</span><span id="paint_year" style="float:right;">Время написания картины</span></p>
+</div>
+</aside>
+<div clear="both">
+<!--
+<audio id="get_music" src="music/Radiohead - In Rainbows/3.mp3" preload="auto" autoplay controls></audio>
+-->
+</div>
+<script>
+//Проигрываем все в папке
+//сделать нормально - в папку класть json со структурой 
+//список папок (дисков) для выбора диска.
+var aud = document.getElementById("get_music");
+aud.volume = 0.2;
+aud.onended = function() {
+var ln = aud.src.length;
+var sub = aud.src.substr(ln-5,1);
+subt = sub-0+1;
+aud.src=(sub==0)?aud.src.substr(0,ln-5)+'.mp3':aud.src.substr(0,ln-5)+subt+'.mp3';
+};
+</script>
+<!--
+Удалить все элементы списка
+Sel.options.length = 0;
+-->
+</article>
+<footer id="foot" style="position:fixed; bottom:0; right:5px; z-index:2;">
+<p>&copy;<a href="mailto:mois.viktor47@yandex.ru?Subject=Искусство%20в%20марках" target="_blank">Моисеенко В.И.</a></p>
+</footer>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+</body>
+</html>
+ 

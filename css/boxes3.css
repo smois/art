@@ -1,0 +1,135 @@
+﻿/* В данном селекторе мы задаем ширину, высоту, обводку, позиционирование, фоновый цвет, цвет и размер теней  */
+
+.box3{
+
+	margin: 20px 20px 10px 30px;
+
+	width: 50%;
+
+	padding: 5px 15px ;
+
+/*	position:relative; */
+	float:left;
+	
+	text-align:justify;
+	 
+	background:#fff;
+
+	background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1,#fff));
+
+	border: 1px solid #ccc;
+
+	-webkit-border-radius: 60px 5px;
+
+	-moz-border-radius: 60px/5px;
+
+	border-radius:60px/5px;
+
+	-webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1) inset;
+
+	-moz-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1) inset;
+
+	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+
+
+/* В данном псевдо классе генерируется правая верхняя тень 
+
+.box3:before{
+
+	content: '';
+
+	width: 50px;
+
+	height: 50px;
+
+	top:0; right:0;
+
+	position:absolute;
+
+	display: inline-block;
+
+	z-index:-1;
+
+	-webkit-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
+
+	-moz-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
+
+	-webkit-transform: rotate(2deg)
+
+			   translate(-14px,20px)
+
+		   	   skew(-20deg);
+
+	-moz-transform: rotate(2deg)
+
+			translate(-14px,20px)
+
+			skew(-20deg);
+
+	-o-transform: rotate(2deg)
+
+		      translate(-14px,20px)
+
+		      skew(-20deg);
+
+	transform: rotate(2deg)
+
+		   translate(-14px,20px)
+
+		   skew(-20deg);
+
+}
+
+*/
+
+/* В данном псевдо классе генерируется верхняя левая тень
+
+.box3:after{
+
+	content: '';
+
+	width: 100px;
+
+	height: 100px;
+
+	top:0; left:0;
+
+	position:absolute;
+
+	z-index:-1;
+
+	display: inline-block;
+
+	-webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
+
+	-moz-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
+
+	-webkit-transform: rotate(2deg)
+
+			   translate(20px,25px)
+
+			   skew(20deg);
+
+	-moz-transform: rotate(2deg)
+
+			translate(20px,25px)
+
+			skew(20deg);
+
+	-o-transform: rotate(2deg)
+
+		      translate(20px,25px)
+
+		      skew(20deg);
+
+	transform: rotate(2deg)
+
+		   translate(20px,25px)
+
+		   skew(20deg);
+
+}
+ */
